@@ -1,0 +1,35 @@
+﻿@model List<sample.Models.Pelicula>
+
+@{
+    ViewBag.Title = "About";
+    string felipe = "felipe";
+    int cont = 0;
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Esta es una pelicula.</p>
+<h1>@felipe</h1>
+
+
+
+@foreach (var peli in Model)
+{
+    
+    <div class="alert alert-primary" role="alert">
+        @cont
+    </div>
+
+    <h3>@peli.titulo</h3>
+    <h3>@peli.duracion</h3>
+    <h3>@peli.publicacion.ToString("dd/MM/yyyy")</h3>
+    <h3>@peli.pais</h3>
+
+    cont++;
+}
+
+@*
+    <h3>@Model.titulo</h3>
+    <h3>@Model.duracion</h3>
+    <h3>@Model.publicacion.ToString("dd/MM/yyyy")</h3>
+    <h3>@Model.pais</h3>*@

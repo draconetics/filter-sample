@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Title";
+}
+
+<h2>Name @ViewBag.Title</h2>
+<h2>@ViewBag.Message</h2>
+<h2>@ViewBag.UnInt</h2>
+<h2>@ViewBag.UnaFecha</h2>
+<h2>@ViewData["msg"]</h2>
+
+<form action="/home/name" method="post">
+    <input type="number" name="edad" id="edad" value="" />
+    <input type="submit" name="name" value="Enviar" />
+</form>
